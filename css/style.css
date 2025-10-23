@@ -1,7 +1,569 @@
-* {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Objectifs {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+/* Flex general */
+.edirham-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* les cartes*/
+.box {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.box h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* titre */
+.edirham-center {
+    margin: 60px auto;
+    max-width: 600px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.edirham-center h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.725);
+    font-weight: lighter;
+}
+
+/* Espacement spécifique */
+.top {
+    margin-bottom: 80px;
+}
+
+.bottom {
+    margin-top: 40px;
+}
+
+:root {
+    --primary: #2E3383;
+    --secondary: #D8B361;
+    --footer_color: #B2AEB8;
+    --footer_color_2: #D2D5E3;
+}
+
+body {
     margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-title {
+    color: rgba(218, 165, 32, 0.811);
+    font-weight: lighter;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary);
+}
+
+p {
+    color: white;
+    opacity: 0.8;
+}
+
+
+
+.avantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avantage-icons {
+    font-size: 65px;
+    color: white;
+}
+
+.avantage-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px var(--secondary) solid;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.avantage-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.testemonies-image-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
 
 }
+
+.avantage-card p {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.avantage-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.testemonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testemonies-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.testemonies-card {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+    width: 350px;
+}
+
+.testemonies-image-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+.testemonies-person-img {
+    position: absolute;
+    height: 495px;
+    width: 350px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.testemonies-rectangle-img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.testemonies-name {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+.testemonies-play-but {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+
 
 .sectionHero {
     width: 100%;
@@ -37,14 +599,10 @@
     text-align: center;
     border: 5px solid #fff;
     border-radius: 10px;
-    padding: 10px;
     margin-top: 50px;
 }
 
-.sectionHero__content__button h4 {
-    margin: 0%;
-    
-}
+
 
 .e-DirhamDescription {
     display: flex;
@@ -65,18 +623,47 @@
     width: 70%;
     padding: 30px 0px;
     word-wrap: break-word;
-  white-space: normal;
+    white-space: normal;
 
 }
-.e-DirhamDescription img{
+
+.e-DirhamDescription img {
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
-@media (min-width: 768px){
-    .sectionHero{
+
+@media screen and (min-width:960px) {
+    .avantage-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .testemonies-img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .avantage-card {
+        width: 40%;
+    }
+
+    .sectionHero {
         height: 90vh;
     }
-    .sectionHero__content__button {
-    width: 50%;
 
-}
+    .sectionHero__content__button {
+        width: 50%;
+    }
+
+    * {
+        margin: 0;
+
+    }
 }
