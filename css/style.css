@@ -5,15 +5,7 @@
     --footer_color_2: #D2D5E3;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--primary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+<<<<<<< HEAD
 /*debut de partie de header avec nav-bar desktop*/
 header{
     width: 100%;
@@ -23,24 +15,42 @@ header{
     justify-content: space-around;
     position: relative;
 }
+=======
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+>>>>>>> origin/dev
 .sub-title {
     color: rgba(218, 165, 32, 0.811);
     font-weight: lighter;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/dev
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+<<<<<<< HEAD
     color: white;
+=======
+    color: var(--secondary);
+>>>>>>> origin/dev
 }
 
 p {
     color: white;
     opacity: 0.8;
 }
+<<<<<<< HEAD
 .logo{
     width: 46%;
     display: flex;
@@ -262,4 +272,133 @@ p {
     color: white;
    }
 
+=======
+
+
+
+.avantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avantage-icons {
+    font-size: 65px;
+    color: white;
+}
+
+.avantage-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px var(--secondary) solid;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.avantage-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.testemonies-image-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+
+}
+
+.avantage-card p {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.avantage-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.testemonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testemonies-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.testemonies-card {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+    width: 350px;
+}
+
+.testemonies-image-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+.testemonies-person-img {
+    position: absolute;
+    height: 495px;
+    width: 350px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.testemonies-rectangle-img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.testemonies-name {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+.testemonies-play-but {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+@media screen and (min-width:960px) {
+    .avantage-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .testemonies-img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .avantage-card {
+        width: 40%;
+        height: 30vh;
+    }
+>>>>>>> origin/dev
 }
