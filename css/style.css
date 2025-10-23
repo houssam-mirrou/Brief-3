@@ -1,3 +1,68 @@
+
+
+.Objectifs {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+/* Flex general */
+.edirham-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* les cartes*/
+.box {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.box h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* titre */
+.edirham-center {
+    margin: 60px auto;
+    max-width: 600px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.edirham-center h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.725);
+    font-weight: lighter;
+}
+
+/* Espacement spécifique */
+.top {
+    margin-bottom: 80px;
+}
+
+.bottom {
+    margin-top: 40px;
+}
 :root {
     --primary: #2E3383;
     --secondary: #D8B361;
@@ -156,6 +221,5 @@ p {
 
     .avantage-card {
         width: 40%;
-        height: 30vh;
     }
 }
