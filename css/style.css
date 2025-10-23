@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2E3383;
+}
+h1{
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.subtitle{
+    color: rgba(218, 165, 32, 0.811);
+    font-weight: lighter;
+}
+
+p{
+    color: white;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+.footer1 {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D9D9D9
+}
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.socialMedia img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+}
+
+.followUs {
+    gap: 10px;
+}
+.bankLogo img {
+    height: 50px;
+    width: 60px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+.socialMedia , .siteLogo , .footer2 , .contact{
+    display: flex;
+}
+
+.footer2 {
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+.footer2 * {
+    color: black;
+    gap: 5px;
+}
