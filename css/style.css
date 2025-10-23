@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,202 @@ h1{
     font-weight: bold;
 }
 
+header{
+    background-color: #303286;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   }
+   .logo img{
+    width: 50px;
+    height: 50px;
+   }
+   .logo h1{
+    font-size: 20px;
+    color: white;
+   }
+   .nav-bar{
+    display: none;
+   }
+   .icon-menu{
+    display: block;
+    color: white;
+    margin-right: 30px;
+    font-size: 25px;
+   }
+   /*fin de partie de header avec nav-bar mobile*/
+   .newsletter{
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: white;
+    border-radius: 0px 50px;
+   }
+   .newsletter-titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+   }
+   .newsletter-titre h1{
+    font-size: 22px;
+    color: #303286;
+   }
+   .newsletter-titre p{
+    font-size: 15px;
+    color: #303286;
+    font-weight: 100;
+   }
+   .inputs{
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .formsrow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .input1{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   }
+   .input1 label{
+    color: #303286;
+    font-weight: 100;
+    font-size: 15px;
+   }
+   .input1 input{
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #303286;
+    border-radius: 10px;
+   }
+   .btn{
+    margin-top: 1%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .btn button{
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #303286;
+    border-color: transparent;
+    color: white;
+   }
+
+.Objectifs {
+    padding: 60px 80px;
+    text-align: center;
+}
+
+/* Flex general */
+.edirham-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* les cartes*/
+.box {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.box h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+}
+
+/* titre */
+.edirham-center {
+    margin: 60px auto;
+    max-width: 600px;
+    color: goldenrod;
+    font-weight: bold;
+}
+
 .subtitle{
+    color: rgba(218, 165, 32, 0.811);
+    font-weight: lighter;
+}
+
+.edirham-center h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgba(255, 217, 0, 0.725);
+    font-weight: lighter;
+}
+
+/* Espacement spécifique */
+.top {
+    margin-bottom: 80px;
+}
+
+.bottom {
+    margin-top: 40px;
+}
+:root {
+    --primary: #2E3383;
+    --secondary: #D8B361;
+    --footer_color: #B2AEB8;
+    --footer_color_2: #D2D5E3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title {
     color: rgba(218, 165, 32, 0.811);
     font-weight: lighter;
 }
@@ -18,15 +214,29 @@ h1{
 p{
     color: white;
     font-weight: lighter;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--secondary);
+}
+
+p {
+    color: white;
+    opacity: 0.8;
 }
 
 
-
-
-
-
-
-
+.avantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* debut du style footer  */
 .footer1 {
     height: 40px;
     display: flex;
@@ -40,6 +250,7 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -20px;
 }
 
 .siteLogo {
@@ -59,10 +270,6 @@ footer img {
     height: 20px;
     width: 20px;
     margin: 0px 3px;
-}
-
-.followUs {
-    gap: 10px;
 }
 .bankLogo img {
     height: 50px;
@@ -87,4 +294,240 @@ footer img {
 .footer2 * {
     color: black;
     gap: 5px;
+    }
+
+    /* la fin du style du footer  */
+.avantage-icons {
+    font-size: 65px;
+    color: white;
+}
+
+.avantage-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avantage-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px var(--secondary) solid;
+    border-radius: 20px;
+    width: 60%;
+}
+
+.avantage-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.testemonies-image-card:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+
+}
+
+.avantage-card p {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.avantage-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.testemonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testemonies-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.testemonies-card {
+    display: flex;
+    flex-direction: column;
+    height: 495px;
+    width: 350px;
+}
+
+.testemonies-image-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+.testemonies-person-img {
+    position: absolute;
+    height: 495px;
+    width: 350px;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.testemonies-rectangle-img {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.testemonies-name {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+.testemonies-play-but {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+@media screen and (min-width:960px) {
+    header{
+        width: 100%;
+    }
+    .logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+   }
+   .logo h1{
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+   }
+.nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+}
+.icon-menu{
+    display: none;
+}
+/*fin de partie de header avec nav-bar desktop*/
+
+/*debut de partie newsletter desktop*/
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin-left: 1%;
+    background-color: white;
+    border-radius: 0px 50px;
+    padding: 20px;
+   }
+   .newsletter-titre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+   }
+   .newsletter-titre h1{
+    font-size: 40px;
+    color: #303286;
+   }
+   .newsletter-titre p{
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    color: #303286;
+    font-weight: 100;
+   }
+   .inputs{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .formsrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   }
+   .input1{
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+   }
+   .input1 label{
+    color: #303286;
+    font-weight: 100;
+   }
+   .input1 input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #303286;
+    border-radius: 10px;
+   }
+   .btn{
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+   }
+   .btn button{
+    width: 218px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #303286;
+    border-color: transparent;
+    color: white;
+   }
+/*fin de partie newsletter desktop*/
+    .avantage-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .testemonies-img-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .avantage-card {
+        width: 40%;
+    }
+
 }
