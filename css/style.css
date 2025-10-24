@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -520,7 +519,9 @@ footer img {
     margin-left: 4%;
 }
 
-.abedrazak, .fatima, .youssef {
+.abedrazak,
+.fatima,
+.youssef {
     background-color: #b2aeb888;
     display: flex;
     flex-direction: column;
@@ -533,7 +534,9 @@ footer img {
     border-radius: 20px;
 }
 
-.abedrazak h1, .fatima h1, .youssef h1 {
+.abedrazak h1,
+.fatima h1,
+.youssef h1 {
     font-size: 20px;
     text-align: center;
 }
@@ -657,10 +660,6 @@ footer img {
 }
 
 .utiliser-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
     padding: 50px 0;
 }
 
@@ -874,8 +873,69 @@ footer img {
     border-radius: 50%;
 }
 
+/* le début du style de la page actualité  */
+.actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.actualites__cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.actualites__carte {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000000 solid 2px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.actualites__carte:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.actualites__carte img {
+    width: 80%;
+}
+
+.actualites__carte>h5 {
+    color: white;
+}
+
+.actualites__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 170px;
+    width: 300px;
+    margin: 10px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* la fin du style de la page actualité  */
 
 @media screen and (min-width:960px) {
+
     .sectionHero {
         height: 90vh;
     }
@@ -1044,6 +1104,8 @@ footer img {
         width: 40%;
     }
 
+    /* le début du responsive actualites  */
+
     .fonctionne-section {
         flex-direction: row;
         align-items: flex-start;
@@ -1103,6 +1165,7 @@ footer img {
         flex-direction: row;
         justify-content: center;
     }
+
     .paragraphe {
         width: 55%;
         margin-left: 5%;
@@ -1191,9 +1254,47 @@ footer img {
 
     .date-card {
         border: white 2px solid;
-        border-bottom:none;
-        border-left:none;
-        border-top:none;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
 
     }
+
+    .actualites__cartes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .actualites__video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: 300px;
+        width: 530px;
+        margin: 10px;
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .actualites__carte {
+        justify-content: space-around;
+        height: 450px;
+    }
+
+    .actualites__carte>h5 {
+        font-size: 20px;
+        font-weight: 100;
+        color: #d2d1d2;
+
+    }
+
+    .actualites h3 {
+        font-size: 30px;
+    }
+
 }
