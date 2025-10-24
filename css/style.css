@@ -8,7 +8,7 @@ main{
 }
 
 header {
-    background-color: #303286;
+    background-color: var(--primary);
     width: 96%;
     display: flex;
     flex-direction: row;
@@ -211,6 +211,8 @@ h4 {
     --third-color: #484C97;
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -260,7 +262,6 @@ footer {
 
 /* debut du style footer  */
 .footer1 {
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -455,7 +456,7 @@ footer img {
 
 .sectionHero__content__button {
     width: auto;
-    height: 5%;
+    height: 12%;
     text-align: center;
     border: 5px solid #fff;
     border-radius: 10px;
@@ -1595,7 +1596,7 @@ video {
 body {
   font-family: Arial, sans-serif;
   color: white;
-  background: #2d3e7d;
+  background: var(--primary);
 }
 
 /* ========== STRUCTURE GÉNÉRALE ========== */
