@@ -1128,3 +1128,255 @@ footer img {
         text-transform: uppercase;
     }
 }
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #2d3e7d;
+}
+
+/* ========== STRUCTURE GÉNÉRALE ========== */
+.section {
+  padding: 80px 25px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1,
+.header h2 {
+  font-size: 2.5rem;
+  color: #ffbb00;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: rgba(255, 217, 0, 0.612);
+  font-size: 1.1rem;
+}
+
+/* ========== BLOCS GÉNÉRIQUES ========== */
+.box,
+.text-box,
+.actor-text,
+.tech-text,
+.tech-right {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffbb00;
+  border-radius: 10px;
+  padding: 30px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+/* ========== FLEX GÉNÉRIQUES ========== */
+.flex,
+.actor,
+.tech-block,
+.tech-double {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ===== SECTION 1 : cercle à gauche, texte à droite ===== */
+.section:first-of-type .flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.section:first-of-type .circle {
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.section:first-of-type .circle img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.section:first-of-type .text-box {
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* ========== CERCLE GÉNÉRIQUE ========== */
+.circle,
+.tech-logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.tech-logo-circle {
+  width: 200px;
+  height: 200px;
+}
+
+.tech-logo-circle img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ========== ACTEURS DE CONFIANCE ========== */
+.actors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actor.reverse {
+  flex-direction: row-reverse;
+}
+
+.actor-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.actor-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+
+.actor-image img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========== TECHNOLOGIE & RÉGULATION ========== */
+.tech-text,
+.tech-right {
+  flex: 1;
+  min-width: 300px;
+
+}
+
+.tech-double {
+  align-items: stretch;
+} 
+
+.tech-card {
+  width: 350px;
+  background: rgba(255, 187, 0, 0.9);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.tech-card-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(45, 62, 125, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+  border: 0px solid #ffbb00;
+}
+
+.tech-card-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.tech-card p {
+  color: rgba(45, 62, 125, 0.95);
+  font-style: italic;;
+}
+
+.tech-card strong {
+  font-style: normal;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header h1,
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .flex,
+  .actor,
+  .tech-block,
+  .tech-double {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Section 1 responsive */
+  .section:first-of-type .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section:first-of-type .text-box {
+    margin-left: 0;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .actor-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .tech-logo-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tech-logo-circle img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .tech-card {
+    width: 100%;
+  }
+}
