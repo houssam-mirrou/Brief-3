@@ -491,28 +491,72 @@ footer img {
     width: 60%;
 }
 
-@media screen and (min-width:960px) {
-    .sectionHero {
-        height: 90vh;
-    }
-
-    .sectionHero__content__button {
-        width: 50%;
-
-    }
-
-    .sectionHero__content h1 {
-        width: 100%;
-    }
-
-    .e-DirhamDescription img {
-        width: 90%;
-    }
-
-    header {
-        width: 95%;
-    }
+.impact-container {
+    width: 100%;
 }
+
+.impact-container h1 {
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.paragraphe h1 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe p {
+    width: 90%;
+    font-size: 16px;
+    margin-left: 4%;
+}
+
+.abedrazak, .fatima, .youssef {
+    background-color: #b2aeb888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.abedrazak h1, .fatima h1, .youssef h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-conclusion {
+    width: 95%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-conclusion h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.section-conclusion p {
+    font-size: 20px;
+    width: 98%;
+}
+
 /* fonctionnement page */
 
 .fonctionne-section {
@@ -778,6 +822,23 @@ footer img {
 }
 
 @media screen and (min-width:960px) {
+    .sectionHero {
+        height: 90vh;
+    }
+
+    .sectionHero__content__button {
+        width: 50%;
+
+    }
+
+    .sectionHero__content h1 {
+        width: 100%;
+    }
+
+    .e-DirhamDescription img {
+        width: 90%;
+    }
+
     header {
         width: 100%;
     }
@@ -987,5 +1048,83 @@ footer img {
     .statistique-bottom-container {
         flex-direction: row;
         justify-content: center;
+    }
+    .paragraphe {
+        width: 55%;
+        margin-left: 5%;
+        text-align: start;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        width: 70%;
+    }
+
+    .impact-container {
+        width: 100%;
+    }
+
+    .impact-container h1 {
+        margin-left: 10%;
+    }
+
+    .paragraphe {
+        margin-left: 5%;
+        width: 55%;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .temoignages1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .abedrazak {
+        grid-column: 3 / 4;
+    }
+
+    .fatima {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+
+    .youssef {
+        grid-column: 5 / 5;
+    }
+
+    .section-conclusion {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        font-size: 20px;
+        width: 70%;
+        text-transform: uppercase;
     }
 }
