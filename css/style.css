@@ -1,37 +1,43 @@
-header{
+header {
     background-color: #303286;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-   }
-   .logo{
+}
+
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
-   }
-   .logo img{
+}
+
+.logo img {
     width: 50px;
     height: 50px;
-   }
-   .logo h1{
+}
+
+.logo h1 {
     font-size: 20px;
     color: white;
-   }
-   .nav-bar{
+}
+
+.nav-bar {
     display: none;
-   }
-   .icon-menu{
+}
+
+.icon-menu {
     display: block;
     color: white;
     margin-right: 30px;
     font-size: 25px;
-   }
-   /*fin de partie de header avec nav-bar mobile*/
-   .newsletter{
+}
+
+/*fin de partie de header avec nav-bar mobile*/
+.newsletter {
     margin-left: 8%;
     display: flex;
     flex-direction: column;
@@ -40,72 +46,82 @@ header{
     width: 85%;
     background-color: white;
     border-radius: 0px 50px;
-   }
-   .newsletter-titre{
+}
+
+.newsletter-titre {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-   }
-   .newsletter-titre h1{
+}
+
+.newsletter-titre h1 {
     font-size: 22px;
     color: #303286;
-   }
-   .newsletter-titre p{
+}
+
+.newsletter-titre p {
     font-size: 15px;
     color: #303286;
     font-weight: 100;
-   }
-   .inputs{
-    width: 90%; 
+}
+
+.inputs {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .formsrow{
+}
+
+.formsrow {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .input1{
+}
+
+.input1 {
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-   }
-   .input1 label{
+}
+
+.input1 label {
     color: #303286;
     font-weight: 100;
     font-size: 15px;
-   }
-   .input1 input{
+}
+
+.input1 input {
     width: 95%;
     padding: 10px;
     border: 2px solid #303286;
     border-radius: 10px;
-   }
-   .btn{
+}
+
+.btn {
     margin-top: 1%;
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .btn button{
+}
+
+.btn button {
     width: 95%;
     padding: 10px;
     border-radius: 15px;
     background-color: #303286;
     border-color: transparent;
     color: white;
-   }
+}
 
 .Objectifs {
     padding: 60px 80px;
@@ -170,11 +186,13 @@ h4 {
 .bottom {
     margin-top: 40px;
 }
+
 :root {
     --primary: #2E3383;
     --secondary: #D8B361;
     --footer_color: #B2AEB8;
     --footer_color_2: #D2D5E3;
+    --third-color: #484C97;
 }
 
 body {
@@ -315,122 +333,404 @@ p {
     right: 10px;
 }
 
-@media screen and (min-width:960px) {
-    header{
-        width: 100%;
-    }
-    .logo{
+/* fonctionnement page */
+
+.fonctionne-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
+    gap: 40px;
+    padding: 40px 0;
 }
-.logo img{
-    width: 40px;
-    height: 40px;
-   }
-   .logo h1{
-    font-weight: 100;
-    font-size: 20px;
-    color: white;
-   }
-.nav-bar{
+
+.fonctionne-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.fonctionne-header h1 {
+    text-align: center;
+}
+
+.fonctionne-header p {
+    text-align: center;
+}
+
+.fonctionne-right-container {
+    position: relative;
+    height: 500px;
     width: 100%;
+    max-width: 800px;
+}
+
+.fonctionne-card-obtenir {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fonctionne-card-recharge {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-suivre {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-use {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%);
+
+}
+
+.arrow-1 {
+    position: absolute;
+    top: 15%;
+    left: 72%;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: 65%;
+    left: 72%;
+}
+
+.arrow-3 {
+    position: absolute;
+    top: 65%;
+    left: 13%;
+}
+
+.arrow-4 {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+}
+
+.fonctionne-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.utiliser-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.utiliser-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.utiliser-section h1 {
+    text-align: center;
+}
+
+.utiliser-card {
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: var(--third-color);
+}
+
+.utiliser-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.p-padding {
+    padding-left: 10px;
+}
+
+.utiliser-card-paragraph {
+    padding: 20px;
+}
+
+.difference-section {
+    padding: 50px 20px;
+}
+
+.difference-section h1 {
+    text-align: center;
+}
+
+.defference-card {
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.difference-header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.difference-card-pagraph {
+    padding: 20px;
+}
+
+.difference-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
-.nav-bar a{
-    color: white;
-    text-decoration: none;
-}
-.icon-menu{
-    display: none;
-}
-/*fin de partie de header avec nav-bar desktop*/
 
-/*debut de partie newsletter desktop*/
-.newsletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin-left: 1%;
-    background-color: white;
-    border-radius: 0px 50px;
-    padding: 20px;
-   }
-   .newsletter-titre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.avantage-section {
     text-align: center;
-    margin: 0;
-   }
-   .newsletter-titre h1{
-    font-size: 40px;
-    color: #303286;
-   }
-   .newsletter-titre p{
-    font-size: 25px;
-    text-align: center;
-    width: 80%;
-    color: #303286;
-    font-weight: 100;
-   }
-   .inputs{
-    width: 100%; 
+    padding: 50px 20px;
+}
+
+.avantage-top-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-   }
-   .formsrow{
-    width: 100%;
+    gap: 15px;
+}
+
+.avantage-bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avantage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.avantage-header {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-   }
-   .input1{
-    width: 40%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-   }
-   .input1 label{
-    color: #303286;
-    font-weight: 100;
-   }
-   .input1 input{
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #303286;
-    border-radius: 10px;
-   }
-   .btn{
-    width: 94%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
-   }
-   .btn button{
-    width: 218px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #303286;
-    border-color: transparent;
-    color: white;
-   }
-/*fin de partie newsletter desktop*/
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.avantage-container p {
+    text-align: left;
+}
+
+.avantage-fonction-card {
+    border: 2px solid var(--secondary);
+    background-color: var(--third-color);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.avantage-card-paragraph {
+    padding: 20px;
+}
+
+.statistique-section {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statistique-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--third-color);
+}
+
+@media screen and (min-width:960px) {
+    header {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    /*fin de partie de header avec nav-bar desktop*/
+
+    /*debut de partie newsletter desktop*/
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin-left: 1%;
+        background-color: white;
+        border-radius: 0px 50px;
+        padding: 20px;
+    }
+
+    .newsletter-titre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .newsletter-titre h1 {
+        font-size: 40px;
+        color: #303286;
+    }
+
+    .newsletter-titre p {
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formsrow {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input1 {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input1 label {
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .input1 input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #303286;
+        border-radius: 10px;
+    }
+
+    .btn {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 218px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #303286;
+        border-color: transparent;
+        color: white;
+    }
+
+    /*fin de partie newsletter desktop*/
     .avantage-card-container {
         display: flex;
         flex-direction: row;
@@ -447,5 +747,65 @@ p {
 
     .avantage-card {
         width: 40%;
+    }
+
+    .fonctionne-section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .fonctionne-header {
+        justify-content: start;
+        align-items: flex-start;
+        width: 45%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .fonctionne-header p {
+        text-align: left;
+    }
+
+    .fonctionne-right-container {
+        width: 55%;
+        height: 550px;
+    }
+
+
+
+    .utiliser-card-container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .utiliser-card {
+        height: 50vh;
+        width: 70%;
+    }
+
+    .difference-card-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-bottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-bottom-container {
+        flex-direction: row;
+        justify-content: center;
     }
 }
