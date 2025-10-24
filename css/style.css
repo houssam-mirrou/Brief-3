@@ -1,4 +1,138 @@
 
+h1 {
+    color: goldenrod;
+    font-weight: bold;
+}
+main{
+    width:100%;
+}
+
+header {
+    background-color: var(--primary);
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+/*fin de partie de header avec nav-bar mobile*/
+.newsletter {
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: white;
+    border-radius: 0px 50px;
+    padding: 20px;
+}
+
+.newsletter-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.newsletter-titre h1 {
+    font-size: 22px;
+    color: #303286;
+}
+
+.newsletter-titre p {
+    font-size: 15px;
+    color: #303286;
+    font-weight: 100;
+}
+
+.inputs {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formsrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input1 label {
+    color: #303286;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.input1 input {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #303286;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 1%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #303286;
+    border-color: transparent;
+    color: white;
+}
 
 .Objectifs {
     padding: 60px 80px;
@@ -44,6 +178,11 @@
     font-weight: bold;
 }
 
+.subtitle {
+    color: rgba(218, 165, 32, 0.811);
+    font-weight: lighter;
+}
+
 .edirham-center h2 {
     font-size: 26px;
     margin-bottom: 10px;
@@ -63,18 +202,26 @@ h4 {
 .bottom {
     margin-top: 40px;
 }
+
 :root {
     --primary: #2E3383;
     --secondary: #D8B361;
     --footer_color: #B2AEB8;
     --footer_color_2: #D2D5E3;
+    --third-color: #484C97;
 }
+
+
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-title {
@@ -82,6 +229,10 @@ body {
     font-weight: lighter;
 }
 
+p {
+    color: white;
+    font-weight: lighter;
+}
 
 h1,
 h2,
@@ -98,13 +249,83 @@ p {
 }
 
 
-
 .avantage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+footer {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* debut du style footer  */
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D9D9D9
+}
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.socialMedia img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+}
+
+.bankLogo img {
+    height: 50px;
+    width: 60px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia,
+.siteLogo,
+.footer2,
+.contact {
+    display: flex;
+}
+
+.footer2 {
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer2 * {
+    color: black;
+    gap: 5px;
+}
+
+/* la fin du style du footer  */
 .avantage-icons {
     font-size: 65px;
     color: white;
@@ -204,7 +425,885 @@ p {
     right: 10px;
 }
 
+.sectionHero {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/e-dirham.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.sectionHero__content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionHero__content h1 {
+    padding: 20px;
+    width: 50%;
+}
+
+.sectionHero__content h2 {
+    width: 70%;
+    text-align: center;
+}
+
+.sectionHero__content__button {
+    width: auto;
+    height: 12%;
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.sectionHero__content__button h3 {
+    margin: 0%;
+    color: #fff;
+}
+
+.e-DirhamDescription {
+    background-color: #303682;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.e-DirhamDescription h1 {
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+}
+
+.e-DirhamDescription p {
+    text-align: center;
+    width: 60%;
+    padding: 20px 0px;
+    word-wrap: break-word;
+    white-space: normal;
+
+}
+
+.e-DirhamDescription img {
+    width: 60%;
+}
+
+.impact-container {
+    width: 100%;
+}
+
+.impact-container h1 {
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.paragraphe h1 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe p {
+    width: 90%;
+    font-size: 16px;
+    margin-left: 4%;
+}
+
+.abedrazak,
+.fatima,
+.youssef {
+    background-color: #b2aeb888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.abedrazak h1,
+.fatima h1,
+.youssef h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-conclusion {
+    width: 95%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-conclusion h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.section-conclusion p {
+    font-size: 20px;
+    width: 98%;
+}
+
+/* fonctionnement page */
+
+.fonctionne-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.fonctionne-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.fonctionne-header h1 {
+    text-align: center;
+}
+
+.fonctionne-header p {
+    text-align: center;
+}
+
+.fonctionne-right-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.fonctionne-card-obtenir {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fonctionne-card-recharge {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-suivre {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-use {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%);
+
+}
+
+.arrow-1 {
+    position: absolute;
+    top: 15%;
+    left: 72%;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: 65%;
+    left: 72%;
+}
+
+.arrow-3 {
+    position: absolute;
+    top: 65%;
+    left: 13%;
+}
+
+.arrow-4 {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+}
+
+.fonctionne-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.utiliser-section {
+    padding: 50px 0;
+}
+
+.utiliser-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.utiliser-section h1 {
+    text-align: center;
+}
+
+.utiliser-card {
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: var(--third-color);
+}
+
+.utiliser-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.p-padding {
+    padding-left: 10px;
+}
+
+.utiliser-card-paragraph {
+    padding: 20px;
+}
+
+.difference-section {
+    padding: 50px 20px;
+}
+
+.difference-section h1 {
+    text-align: center;
+}
+
+.defference-card {
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.difference-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.difference-card-pagraph {
+    padding: 20px;
+}
+
+.difference-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avantage-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.avantage-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avantage-bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avantage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.avantage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.avantage-container p {
+    text-align: left;
+}
+
+.avantage-fonction-card {
+    border: 2px solid var(--secondary);
+    background-color: var(--third-color);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.avantage-card-paragraph {
+    padding: 20px;
+}
+
+.statistique-section {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statistique-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--third-color);
+}
+
+
+.date-projet-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-projet-section h1 {
+    text-align: center;
+}
+
+.date-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px white solid;
+    width: 100%;
+    max-width: 800px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.date-card-icon-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.date-projet-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.date-card-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.date-icon-holder {
+    background-color: var(--secondary);
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+/* le début du style de la page actualité  */
+.actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.actualites__cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.actualites__carte {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000000 solid 2px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: var(--third-color);
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.actualites__carte:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.actualites__carte img {
+    width: 80%;
+}
+
+.actualites__carte>h5 {
+    color: white;
+}
+
+.actualites__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 170px;
+    width: 300px;
+    margin: 10px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* la fin du style de la page actualité  */
+
+.section {
+    height: 90vh;
+
+}
+
+/* header section  */
+.sectionOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "headeSctionOne"
+        "buttomSectionOne"
+    ;
+    background-image: url(/img/bg-section-one.png);
+    background-position: center;
+    padding: 20px 5px;
+
+}
+
+.headeSctionOne {
+    grid-area: headeSctionOne;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titelePage {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titelePage h1 {
+    width: 80%;
+    font-size: 2rem;
+    color: #D8B361;
+    text-align: center;
+}
+
+.descriptionPage p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #B2AEB8;
+}
+
+
+.buttomSectionOne {
+    grid-area: buttomSectionOne;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistiquesTitel {
+    width: 80%;
+    color: #D8B361;
+}
+
+
+.statistiqueCarts {
+    height: 70%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 180px 180px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "cart1 cart1 cart1 cart1 cart1 . . . cart2 cart2 cart2 cart2 cart2"
+        ". . .  . cart3 cart3 cart3 cart3 cart3 . . . .";
+}
+
+.statistique {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.statistique .opacityDive {
+    background-color: #00307665;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.opacityDive .chadow {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000, #00000000);
+    border-radius: 10px;
+
+}
+
+.opacityDive .chadow h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.cartSction1 {
+    grid-area: cart1;
+    background-image: url(/img/womn.webp);
+
+
+}
+
+.cartSction2 {
+    grid-area: cart2;
+    background-image: url(/img/mony.png);
+}
+
+.cartSction3 {
+    grid-area: cart3;
+    background-image: url(/img/doler.webp);
+}
+
+.sectionFour {
+    background-color: #303286;
+    padding: 20px;
+    height: auto;
+    width: 90%;
+}
+
+.keyMap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -60px;
+}
+
+.keyMap h2 {
+    align-self: flex-end;
+    font-size: 22px;
+}
+
+.keyMap h4 {
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.lestColler {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 40px;
+}
+
+.cardColle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.collor {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+
+.cardColle p {
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.cardColle:nth-child(1) .collor {
+    background-color: #c3c7f7;
+}
+
+.cardColle:nth-child(2) .collor {
+    background-color: #d1d3fa;
+}
+
+.cardColle:nth-child(3) .collor {
+    background-color: #a6c9f5;
+}
+
+.cardColle:nth-child(4) .collor {
+    background-color: #81c4f1;
+}
+
+.cardColle:nth-child(5) .collor {
+    background-color: #a0e4e0;
+}
+
+.cardColle:nth-child(6) .collor {
+    background-color: #f7f1cf;
+}
+
+.cardColle:nth-child(7) .collor {
+    background-color: #ffe9b5;
+
+}
+
+.temoignages1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 @media screen and (min-width:960px) {
+
+    .sectionHero {
+        height: 90vh;
+    }
+
+    .sectionHero__content__button {
+        width: 50%;
+
+    }
+
+    .sectionHero__content h1 {
+        width: 100%;
+    }
+
+    .e-DirhamDescription img {
+        width: 90%;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    /*fin de partie de header avec nav-bar desktop*/
+
+    /*debut de partie newsletter desktop*/
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin-left: 1%;
+        background-color: white;
+        border-radius: 0px 50px;
+        padding: 20px;
+    }
+
+    .newsletter-titre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .newsletter-titre h1 {
+        font-size: 40px;
+        color: #303286;
+    }
+
+    .newsletter-titre p {
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formsrow {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input1 {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input1 label {
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .input1 input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #303286;
+        border-radius: 10px;
+    }
+
+    .btn {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 218px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #303286;
+        border-color: transparent;
+        color: white;
+    }
+
+    /*fin de partie newsletter desktop*/
     .avantage-card-container {
         display: flex;
         flex-direction: row;
@@ -222,4 +1321,519 @@ p {
     .avantage-card {
         width: 40%;
     }
+
+    /* le début du responsive actualites  */
+
+    .fonctionne-section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .fonctionne-header {
+        justify-content: start;
+        align-items: flex-start;
+        width: 45%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .fonctionne-header p {
+        text-align: left;
+    }
+
+    .fonctionne-right-container {
+        width: 55%;
+        height: 550px;
+    }
+
+
+
+    .utiliser-card-container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .utiliser-card {
+        height: 50vh;
+        width: 70%;
+    }
+
+    .difference-card-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-bottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-bottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .paragraphe {
+        width: 55%;
+        margin-left: 5%;
+        text-align: start;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        width: 70%;
+    }
+
+    .impact-container {
+        width: 100%;
+    }
+
+    .impact-container h1 {
+        margin-left: 10%;
+    }
+
+    .paragraphe {
+        margin-left: 5%;
+        width: 55%;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .temoignages1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .abedrazak {
+        grid-column: 3 / 4;
+    }
+
+    .fatima {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .youssef {
+        grid-column: 5 / 5;
+    }
+
+    .section-conclusion {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        font-size: 20px;
+        width: 70%;
+        text-transform: uppercase;
+    }
+
+
+    .date-projet-card-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .date-card {
+        border: white 2px solid;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+
+    }
+
+    .actualites__cartes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .actualites__video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        height: 300px;
+        width: 530px;
+        margin: 10px;
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .actualites__carte {
+        justify-content: space-around;
+        height: 550px;
+    }
+
+    .actualites__carte>h5 {
+        font-size: 20px;
+        font-weight: 100;
+        color: #d2d1d2;
+
+    }
+
+    .actualites h3 {
+        font-size: 30px;
+    }
+    .sectionOne {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". headeSctionOne headeSctionOne headeSctionOne headeSctionOne . . . . . . ."
+            ". . . buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne .";
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 30px;
+    }
+    .statistiqueCarts {
+        grid-template-columns: 30% 5% 30% 5% 30%;
+        grid-template-rows: 300px;
+        grid-template-areas:
+            "cart1 . cart3 . cart2";
+        height: 100%;
+    }
+
+    .titelePage h1,
+    .descriptionPage p {
+        text-align: start;
+        width: 100%;
+    }
+
+    .map {
+        display: flex;
+
+    }
+
+    .map img {
+        width: 50%;
+    }
+
+    .keyMap {
+        width: 30%;
+        align-self: flex-end;
+        background-color: #d9d9d9ce;
+        padding: 20px;
+        top: 0%;
+        border-radius: 10px;
+    }
+
+    .lestColler {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .cardColle {
+        flex-direction: row;
+    }
+
+    .cardColle p {
+        writing-mode: horizontal-tb;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .keyMap h2 {
+        align-self: flex-start;
+        margin: 0%;
+        color: #000;
+    }
+
+    .keyMap h4 {
+        margin: 0%;
+        color: #000;
+    }
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: var(--primary);
+}
+
+/* ========== STRUCTURE GÉNÉRALE ========== */
+.section {
+  padding: 80px 25px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1,
+.header h2 {
+  font-size: 2.5rem;
+  color: #ffbb00;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: rgba(255, 217, 0, 0.612);
+  font-size: 1.1rem;
+}
+
+/* ========== BLOCS GÉNÉRIQUES ========== */
+.box,
+.text-box,
+.actor-text,
+.tech-text,
+.tech-right {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffbb00;
+  border-radius: 10px;
+  padding: 30px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+/* ========== FLEX GÉNÉRIQUES ========== */
+.flex,
+.actor,
+.tech-block,
+.tech-double {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ===== SECTION 1 : cercle à gauche, texte à droite ===== */
+.section:first-of-type .flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.section:first-of-type .circle {
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.section:first-of-type .circle img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.section:first-of-type .text-box {
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* ========== CERCLE GÉNÉRIQUE ========== */
+.circle,
+.tech-logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.tech-logo-circle {
+  width: 200px;
+  height: 200px;
+}
+
+.tech-logo-circle img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ========== ACTEURS DE CONFIANCE ========== */
+.actors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actor.reverse {
+  flex-direction: row-reverse;
+}
+
+.actor-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.actor-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+
+.actor-image img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========== TECHNOLOGIE & RÉGULATION ========== */
+.tech-text,
+.tech-right {
+  flex: 1;
+  min-width: 300px;
+
+}
+
+.tech-double {
+  align-items: stretch;
+} 
+
+.tech-card {
+  width: 350px;
+  background: rgba(255, 187, 0, 0.9);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.tech-card-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(45, 62, 125, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+  border: 0px solid #ffbb00;
+}
+
+.tech-card-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.tech-card p {
+  color: rgba(45, 62, 125, 0.95);
+  font-style: italic;;
+}
+
+.tech-card strong {
+  font-style: normal;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header h1,
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .flex,
+  .actor,
+  .tech-block,
+  .tech-double {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Section 1 responsive */
+  .section:first-of-type .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section:first-of-type .text-box {
+    margin-left: 0;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .actor-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .tech-logo-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tech-logo-circle img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .tech-card {
+    width: 100%;
+  }
 }

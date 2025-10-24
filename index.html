@@ -1,13 +1,47 @@
-<html>
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Accueil</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
-
 <body>
+
+    <header>
+        <div class="logo">
+            <img src="https://github.com/houssam-mirrou/Brief-3/blob/main/img/logo.png?raw=true" alt="logo">
+            <h1>e-Dirham</h1>
+        </div>
+        <div class="menu">
+            <a href="#" class="icon-menu"><i class="fas fa-bars"></i></a>
+            <div class="nav-bar">
+                <a href="#">Accueil</a>
+                <a href="fonctionnement.html">Fonctionnement</a>
+                <a href="Sécurité&Confiance.html">Sécurité & Confiance</a>
+                <a href="impact_inclusion.html">Inclusion & Impact</a>
+                <a href="actualite.html">Actualités & Lancement</a>
+            </div>
+        </div>
+    </header>  
   <main>
+    <!-- Section Héro -->
+    <div class="sectionHero">
+        <div class="sectionHero__content">
+            <h1>Le e-Dirham, l’avenir du paiement au Maroc</h1>
+            <h2>Une monnaie digitale sécurisée, accessible et 100 % marocaine</h2>
+            <div class="sectionHero__content__button">
+                <h3>Découvrir le e-Dirham</h3>
+            </div>
+        </div>
+    </div>
+    <!-- Qu’est-ce que le e-Dirham ? -->
+    <div class="e-DirhamDescription">
+        <h1>Qu’est-ce que le e-Dirham ?</h1>
+        <p>Une monnaie numérique de banque centrale développée par Bank Al Maghrib. Cette initiative vise à moderniser les paiements et à renforcer l’inclusion financière dans le pays.</p>
+            <img src="img/Bank-Al-Maghrib-vue-aerienne.jpg" alt="imeg bank al Maghrib vue aerienne">
+    </div>
     <div class="avantage">
       <div>
         <h1>Les Avantages</h1>
@@ -129,7 +163,58 @@
       </div>
 
     </section>
+    <!--newsletter section-->
+    <div class="newsletter">
+        <div class="newsletter-titre">
+            <h1>Newsletter</h1>
+            <p>Restez informé des dernières actualités et innovations du e-Dirham en vous abonnant à la newsletter de Bank Al-Maghrib.</p>
+        </div>
+        <div class="inputs">
+            <div class="formsrow">
+                <div class="input1">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="input1">
+                    <label for="phone">Numèro de Téléphone</label>
+                    <input type= id="phone" placeholder="Numèro de Téléphone">
+                </div>
+            </div>
+            <div class="btn">
+                <button type="button">ENVOYER</button>
+            </div>
+        </div>
+    </div>  
+    
+    <footer>
+        <div class="footer1">
+            <div class="bankLogo">
+                <img src="img/Bank_Al-Maghrib_Logo.png" alt="">
+            </div>
+            <div class="followUs">
+                <h6 style="color: #2E3383;">FOLLOW US</h6>
+                <div class="socialMedia">
+                    <img src="img/Facebook (3).png" alt="">
+                    <img src="img/LinkedIn Circled.png" alt="">
+                    <img src="img/X.png" alt="">
+                    <img src="img/YouTube Squared.png" alt="">
+                    <img src="img/Instagram Circle - Copie.png" alt="">
+                </div>
+            </div>
+            <div class="siteLogo">
+                <h5 style="color: goldenrod;">e-Dirham</h5>
+                <img src="img/Capture_d_écran_2025-10-22_162047-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="copyright"><h6>© Copyright 2025 All rights reserved</h6></div>
+            <div class="contact">
+                <h5>Contact Us</h5>
+                <img src="img/customer-service - Copie.png" alt="">       
+            </div>
+        </div>
+    </footer>
   </main>
-</body>
 
+</body>
 </html>
