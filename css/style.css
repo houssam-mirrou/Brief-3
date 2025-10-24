@@ -1,4 +1,139 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+header {
+    background-color: #303286;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    color: white;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+/*fin de partie de header avec nav-bar mobile*/
+.newsletter {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    background-color: white;
+    border-radius: 0px 50px;
+}
+
+.newsletter-titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.newsletter-titre h1 {
+    font-size: 22px;
+    color: #303286;
+}
+
+.newsletter-titre p {
+    font-size: 15px;
+    color: #303286;
+    font-weight: 100;
+}
+
+.inputs {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formsrow {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.input1 label {
+    color: #303286;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.input1 input {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #303286;
+    border-radius: 10px;
+}
+
+.btn {
+    margin-top: 1%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #303286;
+    border-color: transparent;
+    color: white;
+}
 
 .Objectifs {
     padding: 60px 80px;
@@ -44,6 +179,11 @@
     font-weight: bold;
 }
 
+.subtitle {
+    color: rgba(218, 165, 32, 0.811);
+    font-weight: lighter;
+}
+
 .edirham-center h2 {
     font-size: 26px;
     margin-bottom: 10px;
@@ -63,11 +203,13 @@ h4 {
 .bottom {
     margin-top: 40px;
 }
+
 :root {
     --primary: #2E3383;
     --secondary: #D8B361;
     --footer_color: #B2AEB8;
     --footer_color_2: #D2D5E3;
+    --third-color: #484C97;
 }
 
 body {
@@ -75,6 +217,10 @@ body {
     padding: 0;
     background-color: var(--primary);
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sub-title {
@@ -82,6 +228,10 @@ body {
     font-weight: lighter;
 }
 
+p {
+    color: white;
+    font-weight: lighter;
+}
 
 h1,
 h2,
@@ -98,13 +248,83 @@ p {
 }
 
 
-
 .avantage {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+footer {
+    width: 100%;
+}
+
+/* debut du style footer  */
+.footer1 {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #D9D9D9
+}
+
+.followUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+
+footer img {
+    height: 30px;
+    width: 30px;
+}
+
+.socialMedia img {
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+}
+
+.bankLogo img {
+    height: 50px;
+    width: 60px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.socialMedia,
+.siteLogo,
+.footer2,
+.contact {
+    display: flex;
+}
+
+.footer2 {
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer2 * {
+    color: black;
+    gap: 5px;
+}
+
+/* la fin du style du footer  */
 .avantage-icons {
     font-size: 65px;
     color: white;
@@ -204,7 +424,558 @@ p {
     right: 10px;
 }
 
+.sectionHero {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/e-dirham.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.sectionHero__content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionHero__content h1 {
+    padding: 20px;
+    width: 50%;
+}
+
+.sectionHero__content h2 {
+    width: 70%;
+    text-align: center;
+}
+
+.sectionHero__content__button {
+    width: auto;
+    height: 5%;
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.sectionHero__content__button h3 {
+    margin: 0%;
+    color: #fff;
+}
+
+.e-DirhamDescription {
+    background-color: #303682;
+}
+
+.e-DirhamDescription h1 {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.e-DirhamDescription p {
+    text-align: center;
+    width: 60%;
+    padding: 20px 0px;
+    word-wrap: break-word;
+    white-space: normal;
+
+}
+
+.e-DirhamDescription img {
+    width: 60%;
+}
+.impact-container {
+    width: 100%;
+}
+
+.impact-container h1 {
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.paragraphe h1 {
+    font-size: 20px;
+    text-align: start;
+    margin-left: 4%;
+}
+
+.paragraphe p {
+    width: 90%;
+    font-size: 16px;
+    margin-left: 4%;
+}
+
+.abedrazak, .fatima, .youssef {
+    background-color: #b2aeb888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.abedrazak h1, .fatima h1, .youssef h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-conclusion {
+    width: 95%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-conclusion h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.section-conclusion p {
+    font-size: 20px;
+    width: 98%;
+}
+
 @media screen and (min-width:960px) {
+    .sectionHero {
+        height: 90vh;
+    }
+
+    .sectionHero__content__button {
+        width: 50%;
+
+    }
+
+    .sectionHero__content h1 {
+        width: 100%;
+    }
+
+    .e-DirhamDescription img {
+        width: 90%;
+    }
+
+    header {
+        width: 95%;
+    }
+}
+/* fonctionnement page */
+
+.fonctionne-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.fonctionne-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.fonctionne-header h1 {
+    text-align: center;
+}
+
+.fonctionne-header p {
+    text-align: center;
+}
+
+.fonctionne-right-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.fonctionne-card-obtenir {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fonctionne-card-recharge {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-suivre {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.fonctionne-card-use {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    bottom: 13%;
+    transform: translateX(-50%);
+
+}
+
+.arrow-1 {
+    position: absolute;
+    top: 15%;
+    left: 72%;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: 65%;
+    left: 72%;
+}
+
+.arrow-3 {
+    position: absolute;
+    top: 65%;
+    left: 13%;
+}
+
+.arrow-4 {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+}
+
+.fonctionne-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.utiliser-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.utiliser-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.utiliser-section h1 {
+    text-align: center;
+}
+
+.utiliser-card {
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    background-color: var(--third-color);
+}
+
+.utiliser-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.p-padding {
+    padding-left: 10px;
+}
+
+.utiliser-card-paragraph {
+    padding: 20px;
+}
+
+.difference-section {
+    padding: 50px 20px;
+}
+
+.difference-section h1 {
+    text-align: center;
+}
+
+.defference-card {
+    background-color: var(--third-color);
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.difference-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.difference-card-pagraph {
+    padding: 20px;
+}
+
+.difference-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.avantage-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.avantage-top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avantage-bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.avantage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.avantage-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.avantage-container p {
+    text-align: left;
+}
+
+.avantage-fonction-card {
+    border: 2px solid var(--secondary);
+    background-color: var(--third-color);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.avantage-card-paragraph {
+    padding: 20px;
+}
+
+.statistique-section {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statistique-top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.statistique-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid var(--secondary);
+    border-radius: 20px;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--third-color);
+}
+
+@media screen and (min-width:960px) {
+    header {
+        width: 100%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    /*fin de partie de header avec nav-bar desktop*/
+
+    /*debut de partie newsletter desktop*/
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin-left: 1%;
+        background-color: white;
+        border-radius: 0px 50px;
+        padding: 20px;
+    }
+
+    .newsletter-titre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .newsletter-titre h1 {
+        font-size: 40px;
+        color: #303286;
+    }
+
+    .newsletter-titre p {
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formsrow {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input1 {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input1 label {
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .input1 input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #303286;
+        border-radius: 10px;
+    }
+
+    .btn {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 218px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #303286;
+        border-color: transparent;
+        color: white;
+    }
+
+    /*fin de partie newsletter desktop*/
     .avantage-card-container {
         display: flex;
         flex-direction: row;
@@ -221,5 +992,143 @@ p {
 
     .avantage-card {
         width: 40%;
+    }
+
+    .fonctionne-section {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .fonctionne-header {
+        justify-content: start;
+        align-items: flex-start;
+        width: 45%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .fonctionne-header p {
+        text-align: left;
+    }
+
+    .fonctionne-right-container {
+        width: 55%;
+        height: 550px;
+    }
+
+
+
+    .utiliser-card-container {
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .utiliser-card {
+        height: 50vh;
+        width: 70%;
+    }
+
+    .difference-card-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .avantage-bottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-top-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .statistique-bottom-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .paragraphe {
+        width: 55%;
+        margin-left: 5%;
+        text-align: start;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        width: 70%;
+    }
+
+    .impact-container {
+        width: 100%;
+    }
+
+    .impact-container h1 {
+        margin-left: 10%;
+    }
+
+    .paragraphe {
+        margin-left: 5%;
+        width: 55%;
+    }
+
+    .paragraphe h1 {
+        font-size: 36px;
+    }
+
+    .paragraphe p {
+        font-size: 24px;
+    }
+
+    .temoignages1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .abedrazak {
+        grid-column: 3 / 4;
+    }
+
+    .fatima {
+        grid-column: 4 / 5;
+        grid-row: 1 / 3;
+    }
+
+    .youssef {
+        grid-column: 5 / 5;
+    }
+
+    .section-conclusion {
+        width: 95%;
+        margin-left: 5%;
+    }
+
+    .section-conclusion h1 {
+        font-size: 40px;
+    }
+
+    .section-conclusion p {
+        font-size: 20px;
+        width: 70%;
+        text-transform: uppercase;
     }
 }
