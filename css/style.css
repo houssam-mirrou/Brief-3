@@ -821,6 +821,60 @@ footer img {
     background-color: var(--third-color);
 }
 
+
+.date-projet-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-projet-section h1 {
+    text-align: center;
+}
+
+.date-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px white solid;
+    width: 100%;
+    max-width: 800px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.date-card-icon-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+
+.date-projet-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.date-card-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.date-icon-holder {
+    background-color: var(--secondary);
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+}
+
+
 @media screen and (min-width:960px) {
     .sectionHero {
         height: 90vh;
@@ -1126,5 +1180,20 @@ footer img {
         font-size: 20px;
         width: 70%;
         text-transform: uppercase;
+    }
+
+
+    .date-projet-card-container {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .date-card {
+        border: white 2px solid;
+        border-bottom:none;
+        border-left:none;
+        border-top:none;
+
     }
 }
