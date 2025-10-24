@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -492,7 +492,70 @@ footer img {
     width: 60%;
 }
 
+
+/* le début du style de la page actualité  */
+.actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.actualites__cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.actualites__carte {
+    min-height: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #000000 solid 2px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: ;
+    border: 1px solid #E3C46E;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.actualites__carte:hover {
+    box-shadow: 0px 0px 17px -2px #000000;
+}
+
+.actualites__carte img {
+    width: 80%;
+}
+
+.actualites__carte>h5 {
+    color: white;
+}
+
+.actualites__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 170px;
+    width: 300px;
+    margin: 10px;
+}
+
+video {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* la fin du style de la page actualité  */
+
 @media screen and (min-width:960px) {
+
     .sectionHero {
         height: 90vh;
     }
@@ -660,5 +723,43 @@ footer img {
     .avantage-card {
         width: 40%;
     }
+    
+    /* le début du responsive actualites  */
 
+    .actualites__cartes {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .actualites__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 300px;
+    width: 530px;
+    margin: 10px;
+    }
+
+    video {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    :not(.actualites__carte:nth-of-type(1)) img {
+        height: 140px;
+    }
+
+    .actualites__carte>h5 {
+        font-size: 20px;
+        font-weight: 100;
+        color: #d2d1d2;
+        
+    }
+    .actualites h3 {
+        font-size: 30px;
+    }
+
+    /* la fin du responsive actualites  */
 }
