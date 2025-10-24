@@ -1,50 +1,54 @@
-<<<<<<< HEAD
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: #2E3383;
-}
-h1{
+
+h1 {
     color: goldenrod;
     font-weight: bold;
 }
 
-header{
+header {
     background-color: #303286;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-   }
-   .logo{
+    padding: 15px;
+}
+
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
-   }
-   .logo img{
+}
+
+.logo img {
     width: 50px;
     height: 50px;
-   }
-   .logo h1{
+}
+
+.logo h1 {
     font-size: 20px;
     color: white;
-   }
-   .nav-bar{
+}
+
+.nav-bar {
     display: none;
-   }
-   .icon-menu{
+}
+
+.icon-menu {
     display: block;
     color: white;
     margin-right: 30px;
     font-size: 25px;
-   }
-   /*fin de partie de header avec nav-bar mobile*/
-   .newsletter{
+}
+
+/*fin de partie de header avec nav-bar mobile*/
+.newsletter {
     margin-left: 8%;
     display: flex;
     flex-direction: column;
@@ -53,72 +57,82 @@ header{
     width: 85%;
     background-color: white;
     border-radius: 0px 50px;
-   }
-   .newsletter-titre{
+}
+
+.newsletter-titre {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 
-   }
-   .newsletter-titre h1{
+}
+
+.newsletter-titre h1 {
     font-size: 22px;
     color: #303286;
-   }
-   .newsletter-titre p{
+}
+
+.newsletter-titre p {
     font-size: 15px;
     color: #303286;
     font-weight: 100;
-   }
-   .inputs{
-    width: 90%; 
+}
+
+.inputs {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .formsrow{
+}
+
+.formsrow {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .input1{
+}
+
+.input1 {
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-   }
-   .input1 label{
+}
+
+.input1 label {
     color: #303286;
     font-weight: 100;
     font-size: 15px;
-   }
-   .input1 input{
+}
+
+.input1 input {
     width: 95%;
     padding: 10px;
     border: 2px solid #303286;
     border-radius: 10px;
-   }
-   .btn{
+}
+
+.btn {
     margin-top: 1%;
     width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   }
-   .btn button{
+}
+
+.btn button {
     width: 95%;
     padding: 10px;
     border-radius: 15px;
     background-color: #303286;
     border-color: transparent;
     color: white;
-   }
+}
 
 .Objectifs {
     padding: 60px 80px;
@@ -164,7 +178,7 @@ header{
     font-weight: bold;
 }
 
-.subtitle{
+.subtitle {
     color: rgba(218, 165, 32, 0.811);
     font-weight: lighter;
 }
@@ -188,6 +202,7 @@ h4 {
 .bottom {
     margin-top: 40px;
 }
+
 :root {
     --primary: #2E3383;
     --secondary: #D8B361;
@@ -211,10 +226,10 @@ body {
     font-weight: lighter;
 }
 
-p{
+p {
     color: white;
     font-weight: lighter;
-    }
+}
 
 h1,
 h2,
@@ -236,6 +251,7 @@ p {
     flex-direction: column;
     align-items: center;
 }
+
 /* debut du style footer  */
 .footer1 {
     height: 40px;
@@ -271,6 +287,7 @@ footer img {
     width: 20px;
     margin: 0px 3px;
 }
+
 .bankLogo img {
     height: 50px;
     width: 60px;
@@ -280,7 +297,11 @@ footer img {
     display: flex;
     align-items: center;
 }
-.socialMedia , .siteLogo , .footer2 , .contact{
+
+.socialMedia,
+.siteLogo,
+.footer2,
+.contact {
     display: flex;
 }
 
@@ -291,12 +312,13 @@ footer img {
     background-color: white;
     padding: 5px;
 }
+
 .footer2 * {
     color: black;
     gap: 5px;
-    }
+}
 
-    /* la fin du style du footer  */
+/* la fin du style du footer  */
 .avantage-icons {
     font-size: 65px;
     color: white;
@@ -396,122 +418,231 @@ footer img {
     right: 10px;
 }
 
+
+
+
+.sectionHero {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/e-dirham.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.sectionHero__content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionHero__content h1 {
+    padding: 20px;
+    width: 50%;
+}
+
+.sectionHero__content h2 {
+    width: 70%;
+    text-align: center;
+}
+
+.sectionHero__content__button {
+    width: auto;
+    height: 5%;
+    text-align: center;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.sectionHero__content__button h3 {
+    margin: 0%;
+    color: #fff;
+}
+
+.e-DirhamDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #303682;
+}
+
+.e-DirhamDescription h1 {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.e-DirhamDescription p {
+    text-align: center;
+    width: 60%;
+    padding: 20px 0px;
+    word-wrap: break-word;
+    white-space: normal;
+
+}
+
+.e-DirhamDescription img {
+    width: 60%;
+}
+
 @media screen and (min-width:960px) {
-    header{
+    .sectionHero {
+        height: 90vh;
+    }
+
+    .sectionHero__content__button {
+        width: 50%;
+
+    }
+
+    .sectionHero__content h1 {
         width: 100%;
     }
-    .logo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;
-}
-.logo img{
-    width: 40px;
-    height: 40px;
-   }
-   .logo h1{
-    font-weight: 100;
-    font-size: 20px;
-    color: white;
-   }
-.nav-bar{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-.nav-bar a{
-    color: white;
-    text-decoration: none;
-}
-.icon-menu{
-    display: none;
-}
-/*fin de partie de header avec nav-bar desktop*/
 
-/*debut de partie newsletter desktop*/
-.newsletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 95%;
-    margin-left: 1%;
-    background-color: white;
-    border-radius: 0px 50px;
-    padding: 20px;
-   }
-   .newsletter-titre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-   }
-   .newsletter-titre h1{
-    font-size: 40px;
-    color: #303286;
-   }
-   .newsletter-titre p{
-    font-size: 25px;
-    text-align: center;
-    width: 80%;
-    color: #303286;
-    font-weight: 100;
-   }
-   .inputs{
-    width: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   .formsrow{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-   }
-   .input1{
-    width: 40%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-   }
-   .input1 label{
-    color: #303286;
-    font-weight: 100;
-   }
-   .input1 input{
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #303286;
-    border-radius: 10px;
-   }
-   .btn{
-    width: 94%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-   }
-   .btn button{
-    width: 218px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #303286;
-    border-color: transparent;
-    color: white;
-   }
-/*fin de partie newsletter desktop*/
+    .e-DirhamDescription img {
+        width: 90%;
+    }
+
+    header {
+        width: 95%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-bar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    /*fin de partie de header avec nav-bar desktop*/
+
+    /*debut de partie newsletter desktop*/
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin-left: 1%;
+        background-color: white;
+        border-radius: 0px 50px;
+        padding: 20px;
+    }
+
+    .newsletter-titre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .newsletter-titre h1 {
+        font-size: 40px;
+        color: #303286;
+    }
+
+    .newsletter-titre p {
+        font-size: 25px;
+        text-align: center;
+        width: 80%;
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formsrow {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input1 {
+        width: 40%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .input1 label {
+        color: #303286;
+        font-weight: 100;
+    }
+
+    .input1 input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #303286;
+        border-radius: 10px;
+    }
+
+    .btn {
+        width: 94%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .btn button {
+        width: 218px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: #303286;
+        border-color: transparent;
+        color: white;
+    }
+
+    /*fin de partie newsletter desktop*/
     .avantage-card-container {
         display: flex;
         flex-direction: row;
