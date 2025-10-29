@@ -1,16 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 h1 {
     color: goldenrod;
     font-weight: bold;
 }
+main{
+    width:100%;
+}
 
 header {
-    background-color: #303286;
-    width: 100%;
+    background-color: var(--primary);
+    width: 96%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -49,7 +48,7 @@ header {
 
 /*fin de partie de header avec nav-bar mobile*/
 .newsletter {
-    margin-left: 8%;
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,6 +56,7 @@ header {
     width: 85%;
     background-color: white;
     border-radius: 0px 50px;
+    padding: 20px;
 }
 
 .newsletter-titre {
@@ -211,6 +211,8 @@ h4 {
     --third-color: #484C97;
 }
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -255,11 +257,11 @@ p {
 
 footer {
     width: 100%;
+    margin-top: 10px;
 }
 
 /* debut du style footer  */
 .footer1 {
-    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -454,7 +456,7 @@ footer img {
 
 .sectionHero__content__button {
     width: auto;
-    height: 5%;
+    height: 12%;
     text-align: center;
     border: 5px solid #fff;
     border-radius: 10px;
@@ -469,12 +471,15 @@ footer img {
 
 .e-DirhamDescription {
     background-color: #303682;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .e-DirhamDescription h1 {
     padding: 20px;
     text-align: center;
-    width: 100%;
+    width: 90%;
 }
 
 .e-DirhamDescription p {
@@ -934,6 +939,219 @@ video {
 
 /* la fin du style de la page actualité  */
 
+.section {
+    height: 90vh;
+
+}
+
+/* header section  */
+.sectionOne {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+        "headeSctionOne"
+        "buttomSectionOne"
+    ;
+    background-image: url(/img/bg-section-one.png);
+    background-position: center;
+    padding: 20px 5px;
+
+}
+
+.headeSctionOne {
+    grid-area: headeSctionOne;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titelePage {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titelePage h1 {
+    width: 80%;
+    font-size: 2rem;
+    color: #D8B361;
+    text-align: center;
+}
+
+.descriptionPage p {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #B2AEB8;
+}
+
+
+.buttomSectionOne {
+    grid-area: buttomSectionOne;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statistiquesTitel {
+    width: 80%;
+    color: #D8B361;
+}
+
+
+.statistiqueCarts {
+    height: 70%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 180px 180px;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+        "cart1 cart1 cart1 cart1 cart1 . . . cart2 cart2 cart2 cart2 cart2"
+        ". . .  . cart3 cart3 cart3 cart3 cart3 . . . .";
+}
+
+.statistique {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.statistique .opacityDive {
+    background-color: #00307665;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 10px;
+}
+
+.opacityDive .chadow {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000, #00000000);
+    border-radius: 10px;
+
+}
+
+.opacityDive .chadow h2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+}
+
+.cartSction1 {
+    grid-area: cart1;
+    background-image: url(/img/womn.webp);
+
+
+}
+
+.cartSction2 {
+    grid-area: cart2;
+    background-image: url(/img/mony.png);
+}
+
+.cartSction3 {
+    grid-area: cart3;
+    background-image: url(/img/doler.webp);
+}
+
+.sectionFour {
+    background-color: #303286;
+    padding: 20px;
+    height: auto;
+    width: 90%;
+}
+
+.keyMap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -60px;
+}
+
+.keyMap h2 {
+    align-self: flex-end;
+    font-size: 22px;
+}
+
+.keyMap h4 {
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.lestColler {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 40px;
+}
+
+.cardColle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.collor {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+
+.cardColle p {
+    writing-mode: vertical-rl;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.cardColle:nth-child(1) .collor {
+    background-color: #c3c7f7;
+}
+
+.cardColle:nth-child(2) .collor {
+    background-color: #d1d3fa;
+}
+
+.cardColle:nth-child(3) .collor {
+    background-color: #a6c9f5;
+}
+
+.cardColle:nth-child(4) .collor {
+    background-color: #81c4f1;
+}
+
+.cardColle:nth-child(5) .collor {
+    background-color: #a0e4e0;
+}
+
+.cardColle:nth-child(6) .collor {
+    background-color: #f7f1cf;
+}
+
+.cardColle:nth-child(7) .collor {
+    background-color: #ffe9b5;
+
+}
+
+.temoignages1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 @media screen and (min-width:960px) {
 
     .sectionHero {
@@ -954,7 +1172,7 @@ video {
     }
 
     header {
-        width: 100%;
+        width: 95%;
     }
 
     .logo {
@@ -1223,7 +1441,7 @@ video {
 
     .fatima {
         grid-column: 4 / 5;
-        grid-row: 1 / 3;
+        grid-row: 2 / 3;
     }
 
     .youssef {
@@ -1283,7 +1501,7 @@ video {
 
     .actualites__carte {
         justify-content: space-around;
-        height: 450px;
+        height: 550px;
     }
 
     .actualites__carte>h5 {
@@ -1296,5 +1514,326 @@ video {
     .actualites h3 {
         font-size: 30px;
     }
+    .sectionOne {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            ". headeSctionOne headeSctionOne headeSctionOne headeSctionOne . . . . . . ."
+            ". . . buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne buttomSectionOne .";
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 30px;
+    }
+    .statistiqueCarts {
+        grid-template-columns: 30% 5% 30% 5% 30%;
+        grid-template-rows: 300px;
+        grid-template-areas:
+            "cart1 . cart3 . cart2";
+        height: 100%;
+    }
 
+    .titelePage h1,
+    .descriptionPage p {
+        text-align: start;
+        width: 100%;
+    }
+
+    .map {
+        display: flex;
+
+    }
+
+    .map img {
+        width: 50%;
+    }
+
+    .keyMap {
+        width: 30%;
+        align-self: flex-end;
+        background-color: #d9d9d9ce;
+        padding: 20px;
+        top: 0%;
+        border-radius: 10px;
+    }
+
+    .lestColler {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .cardColle {
+        flex-direction: row;
+    }
+
+    .cardColle p {
+        writing-mode: horizontal-tb;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .keyMap h2 {
+        align-self: flex-start;
+        margin: 0%;
+        color: #000;
+    }
+
+    .keyMap h4 {
+        margin: 0%;
+        color: #000;
+    }
+}
+
+/* ========== RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: var(--primary);
+}
+
+/* ========== STRUCTURE GÉNÉRALE ========== */
+.section {
+  padding: 80px 25px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header h1,
+.header h2 {
+  font-size: 2.5rem;
+  color: #ffbb00;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: rgba(255, 217, 0, 0.612);
+  font-size: 1.1rem;
+}
+
+/* ========== BLOCS GÉNÉRIQUES ========== */
+.box,
+.text-box,
+.actor-text,
+.tech-text,
+.tech-right {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffbb00;
+  border-radius: 10px;
+  padding: 30px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+/* ========== FLEX GÉNÉRIQUES ========== */
+.flex,
+.actor,
+.tech-block,
+.tech-double {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ===== SECTION 1 : cercle à gauche, texte à droite ===== */
+.section:first-of-type .flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.section:first-of-type .circle {
+  width: 220px;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.section:first-of-type .circle img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.section:first-of-type .text-box {
+  flex: 1;
+  margin-left: 40px;
+}
+
+/* ========== CERCLE GÉNÉRIQUE ========== */
+.circle,
+.tech-logo-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.tech-logo-circle {
+  width: 200px;
+  height: 200px;
+}
+
+.tech-logo-circle img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ========== ACTEURS DE CONFIANCE ========== */
+.actors {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.actor.reverse {
+  flex-direction: row-reverse;
+}
+
+.actor-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.actor-logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+}
+
+.actor-image img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========== TECHNOLOGIE & RÉGULATION ========== */
+.tech-text,
+.tech-right {
+  flex: 1;
+  min-width: 300px;
+
+}
+
+.tech-double {
+  align-items: stretch;
+} 
+
+.tech-card {
+  width: 350px;
+  background: rgba(255, 187, 0, 0.9);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.tech-card-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(45, 62, 125, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+  border: 0px solid #ffbb00;
+}
+
+.tech-card-logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.tech-card p {
+  color: rgba(45, 62, 125, 0.95);
+  font-style: italic;;
+}
+
+.tech-card strong {
+  font-style: normal;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header h1,
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .flex,
+  .actor,
+  .tech-block,
+  .tech-double {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Section 1 responsive */
+  .section:first-of-type .flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section:first-of-type .text-box {
+    margin-left: 0;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .actor-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .tech-logo-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tech-logo-circle img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .tech-card {
+    width: 100%;
+  }
 }
